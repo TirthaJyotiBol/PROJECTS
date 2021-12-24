@@ -1,3 +1,17 @@
+"""
+
+QR stands for Quick Response
+..............................
+
+install qrcode module  => pip install qrcode[pil]
+install open cv module => pip install opencv-python
+
+..............................
+
+READ and DETECT QR CODE 
+
+"""
+
 
 import qrcode as q   # -> Generate QR CODE
 import cv2 as c      # -> Detect QR code
@@ -8,6 +22,9 @@ img.save("firstQR.jpg")
 
 img2 = q.make("Hello This is Tirtha")
 img2.save("second2.jpg")
+
+myGithub = q.make("https://github.com/TirthaJyotiBol")
+myGithub.save("Github_Tirtha.jpg")
 
 
 # Detect the QR code
